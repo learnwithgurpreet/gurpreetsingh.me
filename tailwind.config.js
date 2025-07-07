@@ -4,18 +4,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        husky: {
-          50: "#fffbeb",
-          100: "#fef3c7",
-          200: "#fde58a",
-          300: "#fbd24e",
-          400: "#fabe25",
-          500: "#f49d0c",
-          600: "#d87607",
-          700: "#bc560a",
-          800: "#923f0e",
-          900: "#78340f",
-          950: "#451a03",
+        background: "hsl(222 89% 11%)",
+        foreground: "hsl(210 40% 98%)",
+        primary: {
+          DEFAULT: "hsl(210 40% 98%)",
+          foreground: "hsl(222 89% 11%)",
+        },
+        muted: {
+          DEFAULT: "hsl(217 33% 17%)",
+          foreground: "hsl(215 20% 65%)",
+        },
+        accent: {
+          DEFAULT: "hsl(217 33% 17%)",
+          foreground: "hsl(210 40% 98%)",
+        },
+        border: "hsl(217 33% 17%)",
+        card: {
+          DEFAULT: "hsl(222 89% 11%)",
+          foreground: "hsl(210 40% 98%)",
         },
       },
     },

@@ -1,10 +1,29 @@
 {
   "name": "gurpreetsingh.me",
+  "shortName": "GS",
   "url": "https://www.gurpreetsingh.me",
   "canonical": "https://www.gurpreetsingh.me",
   "lang": "en",
   "locale": "en_US",
-  "title": "Resume of Gurpreet Singh",
+  "title": "Gurpreet Singh",
   "themeColor": "#fffbeb",
-  "backgroundColor": "#451a03"
+  "backgroundColor": "#451a03",
+  "mainNavigation": [
+    {
+      "name": "About",
+      "url": "#about"
+    },
+    {
+      "name": "Projects",
+      "url": "#projects"
+    },
+    {
+      "name": "Skills",
+      "url": "#skills"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
+    }
+  ]
 }

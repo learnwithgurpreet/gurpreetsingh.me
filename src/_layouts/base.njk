@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ site.lang }}" class="scroll-smooth">
   <head>
     <meta charset="UTF-8">
     <title>{{ site.title or title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google-site-verification" content="2fZJl0ZB9924pINHvq27e7UeybcSWNSpy21Akk8Ml4U" />
-    <meta name="robots" content="index,follow" />
-    <meta name="googlebot" content="index,follow" />
+    <meta name="google-site-verification" content="2fZJl0ZB9924pINHvq27e7UeybcSWNSpy21Akk8Ml4U"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="googlebot" content="index,follow"/>
     <meta content="{{ keywords }}" name="keywords">
     <meta content="{{ description }}" name="description">
 
@@ -30,22 +30,14 @@
     <meta content="All" name="audience">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
   </head>
-  <body class="antialiased text-husky-950 bg-husky-50 dark:bg-husky-950 dark:text-husky-50 leading-normal font-text text-front transition-color duration-200 ease-in-out">
-    {% include "partials/_header.njk" %}
-    <div class="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap pt-4 my-8">
-      {% include "partials/_aside.njk" %}
-      <main class="lg:w-2/3 lg:pl-8 xl:pl-12">
-        {% include "partials/_intro.njk" %}
-        {% include "partials/_skills.njk" %}
-        {% include "partials/_about.njk" %}
-        {% include "partials/_work.njk" %}
-        {% include "partials/_publication.njk" %}
-        {% include "partials/_projects.njk" %}
-        {% include "partials/_certifications.njk" %}
-        {% include "partials/_education.njk" %}
+  <body class="antialiased">
+    <div class="container mx-auto p-4">
+      {% include "partials/_header.njk" %}
+      <main>
+        {{ content | safe }}
       </main>
+      {% include "partials/_footer.njk" %}
     </div>
-    {% include "partials/_footer.njk" %}
-    {% include "partials/_schema_org.njk" %}
+    {% include "partials/_menu_toggle.njk" %}
   </body>
 </html>

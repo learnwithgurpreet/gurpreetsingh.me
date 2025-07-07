@@ -1,19 +1,12 @@
 {
   "name": "Gurpreet Singh",
-  "shortName": "GS",
+  "intro": "Crafting beautiful, responsive, and accessible web experiences. Inspired by the creativity and passion of the open-source community.",
   "org": "Publicis Sapient",
   "image": "/assets/images/gurpreet-singh.jpeg",
   "title": "Senior Manager Experience Engineering",
   "currentFocus": "Full Stack Development",
   "location": "Frankfurt, Germany",
   "email": "gsin.hello@gmail.com",
-  "address": {
-    "streetAddress": "Mittlerer Hasenpfad 36",
-    "addressLocality": "Frankfurt am Main",
-    "addressRegion": "Hessen",
-    "postalCode": "60598",
-    "addressCountry": "Germany"
-  },
   "telephone": "+49 152 18055291",
   "website": "https://www.gurpreetsingh.me",
   "connect": [
