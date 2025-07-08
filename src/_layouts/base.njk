@@ -36,6 +36,10 @@
       </main>
       {% include "partials/_footer.njk" %}
     </div>
-    {% include "partials/_menu_toggle.njk" %}
+    {% set menu_toggle %}{% include "menu_toggle.js" %}{% endset %}
+    <script>
+      // prettier-ignore
+      {{ menu_toggle | jsmin | safe }}
+    </script>
   </body>
 </html>

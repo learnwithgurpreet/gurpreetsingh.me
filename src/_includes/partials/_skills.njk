@@ -1,16 +1,18 @@
 <!-- Skills Section -->
 <section id="skills" class="py-20 border-t border-border-light dark:border-border-dark">
-  <h2 class="text-3xl font-bold tracking-tighter mb-8 text-center">Technical Expertise</h2>
+  <h2 class="text-3xl font-bold mb-8 text-center">Technical Expertise</h2>
   <div class="flex flex-wrap justify-center gap-4" role="list">
-    <span class="rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm font-medium" role="listitem">HTML5</span>
-    <span class="rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm font-medium" role="listitem">CSS3</span>
-    <span class="rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm font-medium" role="listitem">JavaScript</span>
-    <span class="rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm font-medium" role="listitem">TypeScript</span>
-    <span class="rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm font-medium" role="listitem">React</span>
-    <span class="rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm font-medium" role="listitem">Vue.js</span>
-    <span class="rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm font-medium" role="listitem">Node.js</span>
-    <span class="rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm font-medium" role="listitem">Tailwind CSS</span>
-    <span class="rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm font-medium" role="listitem">Figma</span>
-    <span class="rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm font-medium" role="listitem">Git & GitHub</span>
+    {% for skill in author.skills %}
+      {% for tool in skill.tools %}
+        <span
+          class="flex items-center subpixel-antialiased highlight rounded-full bg-muted-light dark:bg-muted-dark px-4 py-2 text-sm
+            font-medium"
+          role="listitem">{{ tool.language }}
+          {% if tool.icon %}
+            &nbsp;{{ tool.icon | safe }}
+          {% endif %}
+        </span>
+      {% endfor %}
+    {% endfor %}
   </div>
 </section>
