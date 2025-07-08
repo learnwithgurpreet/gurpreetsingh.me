@@ -1,4 +1,4 @@
-const { minifyJs } = require('./11ty');
+const { minifyJs } = require("./11ty");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
