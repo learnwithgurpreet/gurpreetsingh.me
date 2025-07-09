@@ -1,36 +1,22 @@
 <!-- Projects Section -->
-<section id="projects" class="py-20 border-t border-border-light dark:border-border-dark">
-  <h2 class="text-3xl font-bold mb-8 text-center">Notable Projects</h2>
-  <div
-    class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <!-- Project Card -->
-    <div class="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark
-        text-card-foreground-light dark:text-card-foreground-dark shadow-xs">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">Project One</h3>
-        <p class="text-sm text-muted-foreground-light dark:text-muted-foreground-dark mb-4">A web application that simplifies
-          task management with a clean and intuitive interface.</p>
-        <a href="#" class="font-medium text-primary-light dark:text-primary-dark hover:underline">View on GitHub →</a>
-      </div>
+{% if github %}
+  <section id="projects" class="py-20 border-t border-border-light dark:border-border-dark">
+    <h2 class="text-3xl font-bold mb-8 text-center">Notable Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for repo in github %}
+        <div class="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark
+            text-card-foreground-light dark:text-card-foreground-dark shadow-xs">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">{{ repo.name }}</h3>
+            {% if repo.description %}
+              <p class="text-sm text-muted-foreground-light dark:text-muted-foreground-dark mb-2">{{ repo.description }}</p>
+            {% endif %}
+            <p class="text-sm text-muted-foreground-light dark:text-muted-foreground-dark mb-4">⭐ {{ repo.stars }}</p>
+            <a href="{{ repo.html_url }}" class="font-medium text-primary-light dark:text-primary-dark hover:underline">View on GitHub →</a>
+          </div>
+        </div>
+      {% endfor %}
+      <!-- Project Card -->
     </div>
-    <div class="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark
-        text-card-foreground-light dark:text-card-foreground-dark shadow-xs">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">Project Two</h3>
-        <p class="text-sm text-muted-foreground-light dark:text-muted-foreground-dark mb-4">An e-commerce platform with a focus
-          on a seamless user experience and accessibility.</p>
-        <a href="#" class="font-medium text-primary-light dark:text-primary-dark hover:underline">View on GitHub →</a>
-      </div>
-    </div>
-    <div class="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark
-        text-card-foreground-light dark:text-card-foreground-dark shadow-xs">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">Project Three</h3>
-        <p class="text-sm text-muted-foreground-light dark:text-muted-foreground-dark mb-4">A personal portfolio and blog built
-          with a static site generator for maximum performance.
-        </p>
-        <a href="#" class="font-medium text-primary-light dark:text-primary-dark hover:underline">View on GitHub →</a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+{% endif %}
