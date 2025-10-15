@@ -342,10 +342,22 @@
   ],
   "publishes": [
     {
-      "title": "Mono Repo vs. Micro Front-ends with Next.js",
-      "date": "2024-07",
-      "link": "https://www.learnwithgurpreet.com/posts/mono-repo-vs-micro-front-ends-with-nextjs/",
-      "details": "Each has its distinct advantages and potential drawbacks, and choosing the right one can be pivotal to the success of your project."
+      "title": "The Hard Truth About Running Next.js at Scale",
+      "date": "2025-10",
+      "link": "https://www.learnwithgurpreet.com/posts/the-hard-truth-about-running-nextjs-at-scale/",
+      "details": "Next.js has quickly become one of the most dominant frameworks for frontend fullstack development. It’s great for shipping MVPs fast, but here’s the big question: is it equally good for production-grade applications?"
+    },
+    {
+      "title": "How to Shrink Docker Images from Gigabytes to Megabytes",
+      "date": "2025-09",
+      "link": "https://www.learnwithgurpreet.com/posts/how-to-shrink-docker-images-from-gigabytes-to-megabytes/",
+      "details": "As developers, we often focus on building and shipping features. However, the efficiency of our delivery pipeline is just as important."
+    },
+    {
+      "title": "Why companies are moving away from NextJS?",
+      "date": "2025-06",
+      "link": "https://www.learnwithgurpreet.com/posts/why-companies-are-moving-away-from-nextjs/",
+      "details": "Companies are shifting away from Next.js because of concerns about increased complexity, vendor lock-in, performance limitations at scale, and the flexibility offered by alternative frameworks like Astro, Remix, or pure React solutions with Vite."
     },
     {
       "title": "State Handling in React JS",
