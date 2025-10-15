@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "scripts": {
     "start": "npm-run-all -p dev:*",
@@ -15,7 +15,7 @@
     "build:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/styles.css --postcss"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gurpreet Singh",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
